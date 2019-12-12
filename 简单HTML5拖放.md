@@ -22,46 +22,41 @@
 + 接下来就是放置元素
 
   - 先规定放置的地点
+    * 不能托放的原因是默认不能将数据或元素放到其他的元素中
+    * 最开始的想法就是给放置地点阻止默认设置
+       * 利用 ondropover 事件
+       * 当某被拖动的对象在另一对象容器范围内拖动时触发此事件
+       * 在 ondropover 事件中设置  preventDefault()  方法
 
-    	* 不能托放的原因是默认不能将数据或元素放到其他的元素中
-    	* 最开始的想法就是给放置地点阻止默认设置
-
-    - 利用 ondropover 事件
-      - 当某被拖动的对象在另一对象容器范围内拖动时触发此事件
-
-    * 在 ondropover 事件中设置  preventDefault()  方法
-
-       ```html
-         <!-- 这是我定义的放置元素的地点 -->
-          <div ondragover="drago(event)" ondrop='drop(event)'></div>
-        
-          <!-- 这是阻止默认设置 -->
-          function drago(aa){
-          	aa.preventDefault();
-          }
-        
-         ```
+```html
+    <!-- 这是我定义的放置元素的地点 -->
+   <div ondragover="drago(event)" ondrop='drop(event)'></div>
+   
+     <!-- 这是阻止默认设置 -->
+     function drago(aa){
+     	aa.preventDefault();
+     }
+   
+```
 
   - 进行放置
+      - 其实就是把拖动的元素插入到放置地点里
+      - 利用 ondrop 事件进行具体的放置
 
-    * 其实就是把拖动的元素插入到放置地点里
+```html
+  <div ondragover="drago(event)" ondrop='dro(event)'></div>
+    
+              function dro(aa){
+                  aa.preventDefault();
+                  <!-- 阻止默认事件 -->
+                  let data = aa.dataTransfer.getData('Text');
+                  <!-- 获取到被拖元素的id 通过刚才设置的值直接获取 -->
+                  aa.target.appendChild(document.getElementById(data))
+                  <!-- 将元素插入到放置的地点 -->
+              }
+```
 
-    * 利用 ondrop 事件进行具体的放置
-
-      ```html
-      <div ondragover="drago(event)" ondrop='dro(event)'></div>
-          
-                  function dro(aa){
-                      aa.preventDefault();
-                      <!-- 阻止默认事件 -->
-                      let data = aa.dataTransfer.getData('Text');
-                      <!-- 获取到被拖元素的id 通过刚才设置的值直接获取 -->
-                      aa.target.appendChild(document.getElementById(data))
-                      <!-- 将元素插入到放置的地点 -->
-                  }
-      ```
-
-      
+  
 
  + 实例
 
