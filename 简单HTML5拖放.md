@@ -14,7 +14,7 @@
 
 + 然后就是规定要拖动什么
 
-  + 利用 ondragstart 属性所触发的事件规定要拖动的数据
+  + 利用 ondragstart 事件规定要拖动的数据
 
   * 具体就是使用 dataTransfer.setData()方法 规定数据的类型和值
   * 值也就是你要拖动数据或元素的标志 如id,类名，一般通过事件的 target 属性获取
@@ -23,27 +23,29 @@
 
   - 先规定放置的地点
 
-    - 利用 ondropover 属性规定放置的地点
+    	* 不能托放的原因是默认不能将数据或元素放到其他的元素中
+    	* 最开始的想法就是给放置地点阻止默认设置
 
-    * 但是默认是不能将数据或元素放到其他的元素中的，要想放，得阻止默认设置
+    - 利用 ondropover 事件
+      - 当某被拖动的对象在另一对象容器范围内拖动时触发此事件
 
-    * 利用事件的 preventDefault() 方法
+    * 在 ondropover 事件中设置  preventDefault()  方法
 
-          ```html
-    <!-- 这是我定义的放置元素的地点 -->
-    <div ondragover="drago(event)" ondrop='drop(event)'></div>
-        
-    <!-- 这是阻止默认设置 -->
-    function drago(aa){
-    	aa.preventDefault();
-    }
-          ```
+          
+          <!-- 这是我定义的放置元素的地点 -->
+          <div ondragover="drago(event)" ondrop='drop(event)'></div>
+          
+          <!-- 这是阻止默认设置 -->
+          function drago(aa){
+          	aa.preventDefault();
+          }
+          
 
   - 进行放置
 
     * 其实就是把拖动的元素插入到放置地点里
 
-    * 利用 ondrop 属性触发的事件进行具体的放置
+    * 利用 ondrop 事件进行具体的放置
 
       ```html
       <div ondragover="drago(event)" ondrop='dro(event)'></div>
