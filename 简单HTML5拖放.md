@@ -31,15 +31,16 @@
 
     * 在 ondropover 事件中设置  preventDefault()  方法
 
-          
-          <!-- 这是我定义的放置元素的地点 -->
+       ```html
+         <!-- 这是我定义的放置元素的地点 -->
           <div ondragover="drago(event)" ondrop='drop(event)'></div>
-          
+        
           <!-- 这是阻止默认设置 -->
           function drago(aa){
           	aa.preventDefault();
           }
-          
+        
+         ```
 
   - 进行放置
 
