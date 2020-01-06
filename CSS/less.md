@@ -114,9 +114,110 @@
 
 ##### 嵌套规则
 
+###### 基本嵌套规则
+
++ 这个就比较简单了，和上一篇中的 sass的嵌套规则是一样的
+
+###### &的使用
+
++ 代表的是平级
+
+```html
+//不加&
+.header{
+    height: 60px;
+    background-color: #ccc;
+    :hover{
+        background-color: #327f44;
+    }
+}
+```
+
+```html
+//编译后
+.header :hover {
+  background-color: #327f44;
+}
+//不会生效，中间多了一个空格
+```
+
+```html
+//加&
+.header{
+    height: 60px;
+    background-color: #ccc;
+    &:hover{
+        background-color: #327f44;
+    }
+}
+```
+
+```html
+//编译后
+.header:hover {
+  background-color: #327f44;
+}
+//即可生效
+```
 
 
 
+##### 变量
+
+ + 属性值
+   	+ 例如颜色值： @color: #ccc;  定义后就可以直接引用了
+
++ 属性
+  + 例如外边距： @m: margin;	引用时： @{m}: 0;
+
++ 选择器
+  + 例如一个class为header的div： @selector: .header;	引用时： @{selector}{属性: 属性值}
+
++ 后两种不常见，了解即可
+
+##### 变量的延迟加载
+
+ + 就是说变量的加载会在其所在作用域加载完后
+
+```html
+@var: 0;
+.class{
+    @var: 1;
+    .brass{
+        @var: 2;
+        //编译成 .css文件后 three的值是3
+        // 就是因为延迟加载
+        // 变量的加载会在整个作用域加载之后
+        three: @var;
+        @var: 3;
+    }
+    one: @var;
+}
+```
 
 
+
+##### 混合
+
+###### 普通混合
+
+​	除了定义符号不同，其他基本和sass一样
+
+###### 传参混合
+
+```html
+//定义混合
+.hunhe(@h, @r, @c){
+    height: @h;
+    line-height: 60px;
+    border-bottom: 1px solid #7345b8;
+    border-radius: @r;
+    background-color: @c;
+}
+//引入
+.header{
+	//传参	
+    .hunhe(60px,50%,#ccc);
+}
+```
 
