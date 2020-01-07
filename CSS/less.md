@@ -221,3 +221,53 @@
 }
 ```
 
+
+
+##### 匹配模式
+
+类似于混入的传参，即使用特定的参数对应特定的变化
+
+直接上一个动态生成三角形的例子
+
+```html
+//随意写一个盒子，引入如下样式
+//通过不同的参数就能生成对应的三角形
+//下面的参数就是方向朝右，大小为40px，颜色是#0d46a2的三角形
+@import './sjx.less';
+#wrap{
+    .sjx{
+        .sanjiaox(R,40px,#0d46a2);
+    }
+}
+```
+
+```html
+//这就是sjx.less中的代码
+.s{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+}
+.sanjiaox(B,@w,@c){
+    .s;
+    border-width: @w;
+    border-color: @c transparent transparent transparent;
+}
+.sanjiaox(T,@w,@c){
+    .s;
+    border-width: @w;
+    border-color: transparent transparent @c transparent;
+}
+.sanjiaox(L,@w,@c){
+    .s;
+    border-width: @w;
+    border-color: transparent @c transparent transparent;
+}
+.sanjiaox(R,@w,@c){
+    .s;
+    border-width: @w;
+    border-color: transparent transparent transparent @c;
+}
+
+```
+
