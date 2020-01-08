@@ -5,3 +5,4 @@
 + [MongoDB基础学习](https://github.com/1367464114/study/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/MongoDB%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0.md)
 + [Sass的使用](https://github.com/1367464114/study/blob/master/Css/Sass.md)
 + [less的安装与使用](https://github.com/1367464114/study/blob/master/CSS/less.md)
++ [jQuery的简介及一些基本用法](https://github.com/1367464114/study/blob/master/JavaScript/jQuery.md)
