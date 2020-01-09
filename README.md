@@ -6,3 +6,4 @@
 + [Sass的使用](https://github.com/1367464114/study/blob/master/CSS/Sass.md)
 + [less的安装与使用](https://github.com/1367464114/study/blob/master/CSS/less.md)
 + [jQuery的简介及一些基本用法](https://github.com/1367464114/study/blob/master/JavaScript/jQuery.md)
++ [git关于删除的一些小操作](https://github.com/1367464114/study/blob/master/Git/git%E5%85%B3%E4%BA%8E%E5%88%A0%E9%99%A4%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%93%8D%E4%BD%9C.md)
