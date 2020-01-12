@@ -10,5 +10,7 @@
   + [ES6的简介和使用](https://github.com/1367464114/study/blob/master/JavaScript/ES6.md)
 #### 数据库
   + [MongoDB基础学习](https://github.com/1367464114/study/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/MongoDB%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0.md)
+#### Node
+  + [Node的基础学习总结](https://github.com/1367464114/study/blob/master/Node/Node%E6%80%BB%E7%BB%93.md)
 #### 前端工具系列
   + [git关于删除的一些小操作](https://github.com/1367464114/study/blob/master/Git/git%E5%85%B3%E4%BA%8E%E5%88%A0%E9%99%A4%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%93%8D%E4%BD%9C.md)
