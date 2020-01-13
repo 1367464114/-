@@ -11,7 +11,6 @@
 
 #### 安装
 
-	+ 下载和安装[Node.js](https://nodejs.org/en/download/) 安装完成后你可以在命令行中使用`node -v` 和 `npm -v`  检验是否安装成功
-	+ 安装 `cordova` 模块使用Nodejs的npm工具， `cordova  `  模块会被 npm 工具自动下载
-	+ 使用  **`npm install -g codeova`**  进行全局安装
-	+ 安装完成后可以用 `codeova -v`  检验是否安装成功
++ 下载和安装  [Node.js](https://nodejs.org/en/download/)  安装完成后你可以在命令行中使用 `node -v` 和  `npm -v`  检验是否安装成功
++ 安装 `cordova` 模块使用Nodejs的npm工具， `cordova  `  模块会被 npm 工具自动下载
++ 使用  **`npm install -g codeova`**  进行全局安装安装完成后可以用 `codeova -v`  检验是否安装成功
