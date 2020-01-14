@@ -8,9 +8,9 @@
 #### JavaScript
   + [JavaScript函数初探](https://github.com/1367464114/study/blob/master/JavaScript/%E5%87%BD%E6%95%B0%E5%88%9D%E6%8E%A2.md)
   + [jQuery的简介及一些基本用法](https://github.com/1367464114/study/blob/master/JavaScript/jQuery.md)
-  + [ES6的简介和使用](https://github.com/1367464114/study/blob/master/JavaScript/ES6.md)
+  + [ES6的简介和用法](https://github.com/1367464114/study/blob/master/JavaScript/ES6.md)
 #### 数据库
-  + [MongoDB基础学习](https://github.com/1367464114/study/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/MongoDB%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0.md)
+  + [MongoDB基础学习总结](https://github.com/1367464114/study/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/MongoDB%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0.md)
 #### Node
   + [Node的基础学习总结](https://github.com/1367464114/study/blob/master/Node/Node%E6%80%BB%E7%BB%93.md)
 #### 前端工具系列
