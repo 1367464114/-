@@ -6,6 +6,7 @@
   + [Sass的使用](https://github.com/1367464114/study/blob/master/CSS/Sass.md)
   + [less的安装与使用](https://github.com/1367464114/study/blob/master/CSS/less.md)
 #### JavaScript
+  + [JavaScript函数初探](https://github.com/1367464114/study/blob/master/JavaScript/%E5%87%BD%E6%95%B0%E5%88%9D%E6%8E%A2.md)
   + [jQuery的简介及一些基本用法](https://github.com/1367464114/study/blob/master/JavaScript/jQuery.md)
   + [ES6的简介和使用](https://github.com/1367464114/study/blob/master/JavaScript/ES6.md)
 #### 数据库
