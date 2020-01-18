@@ -122,7 +122,8 @@
             })
             ```
         * 交替样式类
-            *toggleClass() 可以设置或删除样式类
+            
+            * toggleClass() 可以设置或删除样式类
             
             ```html
             $(function(){
@@ -180,13 +181,16 @@
             * before()所选元素之前
             * after()所选元素之后
     + 复制元素
+        
         * clone() 生成被选元素的副本  包括子节点、文本和属性
     + 替换元素
         * replaceWith()
         * replaceAll()
     + 包裹元素
+        
         * wrap()
     + 删除元素
+        
         * remove() 删除被选元素 包括文本、子节点、绑定的事件、附加的数据
     * empty()  删除被选元素 包括文本、子节点
         * detach()  只是从被选元素中移除所有内容
@@ -213,10 +217,11 @@
     + $.ajax()
 
 - jQuery插件
+    
     + [下载地址](https://plugins.jquery.com/)
     
 - jQueryUI
-    + [下载地址]https://jqueryui.com/
+    + [下载地址](https://jqueryui.com/)
     
 
 ### 了解
