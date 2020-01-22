@@ -19,5 +19,6 @@
   + [Codeova的简介](https://github.com/1367464114/study/blob/master/Cordova/Codeova.md)
   + [浏览器的工作原理](https://github.com/1367464114/study/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.md)
   + [Typora引入图片](https://github.com/1367464114/study/blob/master/Typora/Typora%E5%BC%95%E5%85%A5%E5%9B%BE%E7%89%87.md)
+  + [Typora绘图](https://github.com/1367464114/study/blob/master/Typora/Typora%E7%BB%98%E5%9B%BE.md)
 #### 微信小程序
   + [微信小程序学习总结](https://github.com/1367464114/study/blob/master/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.md)
