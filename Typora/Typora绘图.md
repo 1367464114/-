@@ -6,48 +6,30 @@
 
 + 时序图
 
-![image-20200122211647754](../imgs/image-20200122211647754.png)
+  ​	首先确定对应的语言，例如  **````sequence`**   确定是用 sequence 语言来绘制，然后根据语法绘制想要的图形
 
-```sequence
-hjw -> xm:hello
-Note right of xm:five
-note left of hjw:three
-xm -> hjw:thanks
-```
+<img src="../imgs/image-20200122211647754.png" alt="image-20200122211647754" style="zoom: 80%;" />
+
+​			上面图片中的语句绘制的图如下
+
+<img src="../imgs/image-20200123222657117.png" alt="image-20200123222657117" style="zoom:80%;" />
 
 + 复杂版时序图
 
-  ![image-20200123213455284](../imgs/image-20200123213455284.png)
+  <img src="../imgs/image-20200123213455284.png" alt="image-20200123213455284" style="zoom:80%;" />
 
-  ```sequence
-  title:标题：复杂版时序图
-  A -> B:你好，请问你看见王老师了吗
-  note right of B:B的描述
-  note left of A:A的描述
-  B -> A:我也不清楚，你问问C吧
-  A -> C:你看见王老师了吗
-  C -> 王老师:王老师，A找你了
-  王老师 -> A:听说你找我了
-  ```
-
+  ​		上面图片中的语句绘制的图如下
+  
+  <img src="../imgs/image-20200123222835492.png" alt="image-20200123222835492" style="zoom: 67%;" />
+  
   
 
 #### 依托于[flowchart.js](http://flowchart.js.org/)来实现
 
  + 流程图
 
-   ![image-20200123220430997](../imgs/image-20200123220430997.png)
+   <img src="../imgs/image-20200123220430997.png" alt="image-20200123220430997" style="zoom:80%;" />
+   
+   ​		上面图片中的语句绘制的图如下
 
-```flow
-st=>start: 开始框
-op=>operation: 处理框
-cond=>condition: 判断框
-sub1=>subroutine: 子流程
-io=>inputoutput: 输入输出框
-e=>end: 结束框
-st->op->cond
-cond(yes)->io->e
-cond(no)->sub1(right)->op
-
-```
-
+<img src="../imgs/image-20200123222933921.png" alt="image-20200123222933921" style="zoom:80%;" />
