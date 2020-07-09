@@ -20,6 +20,7 @@
 + git merge: 例如我要将 dev-hjw分支 合并到 主分支
   + 先切换到主分支  git branch     git checkout master
   + git merge dev-hjw
+  + git push origin master
 + git branch -d 分支名:删除分支
 + git remote: 查看远程连接
   + git remote add origin1 项目远程连接： 添加项目远程连接
