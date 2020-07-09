@@ -30,14 +30,14 @@
 
  + 首先  **git log**  查看 commit  的记录，主要是看  ID（图中红色箭头所指）
 
-   <img src="%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/study/imgs/3-1.png"  />
+   ![](../imgs/3-1-1594283664184.png)
 
 + 然后 让本地仓库回到提交前的状态   执行命令  **git reset --hard commit的ID**
 
-  <img src="%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/study/imgs/3-2.png"  />
+  ![](../imgs/3-2-1594283680868.png)
 
 + 最后  撤回远程仓库的提交  执行命令  **git push origin 分支名 --force**
 
-  <img src="%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/study/imgs/3-3.png"  />
+  ![](../imgs/3-3-1594283695075.png)
 
 + 在 github 仓库中查看  分支  上的提交记录（History）发现你要撤回的提交消失了，成功。
