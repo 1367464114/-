@@ -15,7 +15,9 @@
   + [Node的基础学习总结](https://github.com/1367464114/study/blob/master/Node/Node%E6%80%BB%E7%BB%93.md)
   + [get&post的使用方法及区别](https://github.com/1367464114/study/blob/master/Node/get%26post.md)
 #### 前端工具系列
-  + [git关于删除的一些小操作](https://github.com/1367464114/study/blob/master/Git/git%E5%85%B3%E4%BA%8E%E5%88%A0%E9%99%A4%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%93%8D%E4%BD%9C.md)
+  + Git相关
+    + [git关于删除的一些小操作](https://github.com/1367464114/study/blob/master/Git/git%E5%85%B3%E4%BA%8E%E5%88%A0%E9%99%A4%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%93%8D%E4%BD%9C.md)
+    + [git的基本命令和push回滚](https://github.com/1367464114/study/blob/master/Git/git%E5%91%BD%E4%BB%A4.md)
   + [Codeova的简介](https://github.com/1367464114/study/blob/master/Cordova/Codeova.md)
   + [浏览器的工作原理](https://github.com/1367464114/study/blob/master/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.md)
   + [Typora引入图片](https://github.com/1367464114/study/blob/master/Typora/Typora%E5%BC%95%E5%85%A5%E5%9B%BE%E7%89%87.md)
