@@ -108,3 +108,75 @@ c(2);
     + 第二个会报错：c 不是一个函数
     + 因为虽然变量声明不会覆盖函数声明，但是变量的赋值会覆盖函数的声明
     + 也就是说 执行 var a = 1  语句之后，函数声明被覆盖了，那么后面执行  c(2) 语句时肯定会报错啊，c 现在是变量了，不是函数了
+
+#### 4、考察点：函数的this指向
+
+ + 题目1
+
+   ```javascript
+   var a = 10;
+   function test() {
+       // var a 被提升
+       a = 100;
+       console.log(a); //100
+       console.log(this.a); //10 
+       // test()是函数独立调用，其作用域中的 this 绑定（指向）为全局对象 window
+       // 也就是说 this.a 访问的是全局作用域中的 a  
+       var a;
+       console.log(a); //100
+   }
+   test();
+   
+   打印结果：100  10  100
+   ```
+
+   
+
++ 题目2
+
+  ```javascript
+  var val = 1;
+  var obj = {
+      val: 2,
+      del: function () {
+          // console.log(this.val);  2
+          // console.log(val);       1
+          console.log(this);  //val:2,del:f
+          // console.log(this.val); 2
+          this.val *= 2;
+          // console.log(this.val); 4
+          console.log(val);
+      }
+  }
+  obj.del();  //obj.del()这种方式调用函数：this 就会指向 obj
+  // 独立调用: this 指向 window
+  
+  
+  打印结果：Object{del: f(), val: 2}
+  		1
+  ```
+
+  + 这道题还有就是就是分清楚 val  和  this.val
+
+    
+
++ 题目3
+
+  ```javascript
+  var name = "erdong";
+  var object = {
+      name: "chen",
+      getNameFunc: function () {
+          return function () {
+              return this.name; //最关键的就是  这里的 this指向谁
+          }
+      }
+  }
+  console.log(object.getNameFunc()()); 
+  
+  
+  //打印结果：erdong
+  ```
+
+  + return function(){}  返回的函数再执行就相当于  (function(){})(); 是独立执行的  也就是 this指向 window
+
